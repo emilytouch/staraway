@@ -21,11 +21,6 @@ public class NPCController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(Input.GetKeyDown(KeyCode.Space) && dialogueBox == enabled)
-        {
-            dialogueBox.SetActive(false);
-            Time.timeScale = 1f;
-        }*/
 
         if (Input.GetKeyDown(KeyCode.Space) && playerNear)
         {
