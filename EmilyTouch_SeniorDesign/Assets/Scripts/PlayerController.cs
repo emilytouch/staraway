@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public float health;
     public float speed;
 
     // Start is called before the first frame update
@@ -16,7 +16,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.RightShift))
+        {
+            speed += 2;
+        }
+        if (Input.GetKeyUp(KeyCode.RightShift))
+        {
+            speed = 1;
+        }
     }
 
     void FixedUpdate()

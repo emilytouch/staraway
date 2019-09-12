@@ -23,6 +23,8 @@ public class LevelManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && playerInExit)
         {
+            PlayerPrefs.SetString(levelToLoad, SceneManager.GetActiveScene().name);
+            PlayerPrefs.Save();
             SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
             actionText.text = "";
         }

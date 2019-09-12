@@ -6,20 +6,17 @@ using UnityEngine.UI;
 public class ItemPickUps : MonoBehaviour
 {
     public Text actionText;
-    public GameObject dialogueBox;
-    public Text dialogueText;
+    public Text pickUpText;
     private bool playerNear;
-    public GameObject itemDisplay;
-    private int lastPressed;
+
+    public Sprite itemSprite;
 
     // Start is called before the first frame update
     void Start()
     {
-        dialogueBox.SetActive(false);
         actionText.text = "";
-        dialogueText.text = "";
-        itemDisplay.SetActive(false);
-        lastPressed = 0;
+        pickUpText.text = "";
+        GetComponent<SpriteRenderer>().sprite = itemSprite;
     }
 
     // Update is called once per frame
@@ -27,26 +24,15 @@ public class ItemPickUps : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && playerNear)
         {
-            if (lastPressed == 0)
-            {
-                dialogueBox.SetActive(true);
-                dialogueText.text = "This is an item! Pick up more to help your party on your journey.";
-                itemDisplay.SetActive(true);
-                Time.timeScale = 0f;
-                lastPressed = 1;
-            }
-            else
-            {
-                dialogueBox.SetActive(false);
-                dialogueText.text = "";
-                itemDisplay.SetActive(false);
-                Time.timeScale = 1f;
-                lastPressed = 0;
-                Destroy(gameObject);
-            }
+            pickUpText.text = $"{name} collected!";
+            
         }
 
-
+        if (Input.GetKeyDown(KeyCode.Space) && playerNear == false)
+        {
+            pickUpText.text = "";
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
