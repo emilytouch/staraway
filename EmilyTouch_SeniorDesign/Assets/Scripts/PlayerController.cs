@@ -7,10 +7,20 @@ public class PlayerController : MonoBehaviour
     public float health;
     public float speed;
 
+    private static bool playerExists;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!playerExists)
+        {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
