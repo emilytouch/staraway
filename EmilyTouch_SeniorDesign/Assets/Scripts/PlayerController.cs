@@ -1,11 +1,15 @@
-﻿using System.Collections;
+﻿using PixelCrushers.DialogueSystem;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public float health;
     public float speed;
+    public float detectionNumber;
+    public Text healthText;
 
     private static bool playerExists;
 
@@ -21,6 +25,8 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        SetHealthText();
     }
 
     // Update is called once per frame
@@ -34,6 +40,25 @@ public class PlayerController : MonoBehaviour
         {
             speed = 1;
         }
+
+        if (speed >= 3)
+        {
+            detectionNumber += 2;
+        }
+        else
+        {
+            detectionNumber -= 1;
+        }
+
+        if (detectionNumber > 100)
+        {
+            detectionNumber = 100;
+        }
+
+        if (detectionNumber < 0)
+        {
+            detectionNumber = 0;
+        }
     }
 
     void FixedUpdate()
@@ -42,5 +67,11 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         GetComponent<Rigidbody2D>().velocity = movement * speed;
+    }
+
+    public void SetHealthText()
+    {
+        healthText.text = "Health: " + health;
+
     }
 }
