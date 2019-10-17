@@ -6,12 +6,10 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public float health;
     public float speed;
-    public float detectionNumber;
-    public Text healthText;
-
+    public float detectionNumber; 
     private static bool playerExists;
+    public Text detectionText;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +24,8 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        SetHealthText();
+        detectionNumber = 0;
+        SetDetectionText();
     }
 
     // Update is called once per frame
@@ -43,22 +42,30 @@ public class PlayerController : MonoBehaviour
 
         if (speed >= 3)
         {
-            detectionNumber += 2;
+            detectionNumber += 1;
+            SetDetectionText();
         }
         else
         {
             detectionNumber -= 1;
+            SetDetectionText();
+
         }
 
-        if (detectionNumber > 100)
+        if (detectionNumber >= 100)
         {
             detectionNumber = 100;
+            SetDetectionText();
+
         }
 
-        if (detectionNumber < 0)
+        if (detectionNumber <= 0)
         {
             detectionNumber = 0;
+            SetDetectionText();
+
         }
+
     }
 
     void FixedUpdate()
@@ -69,9 +76,8 @@ public class PlayerController : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = movement * speed;
     }
 
-    public void SetHealthText()
+    public void SetDetectionText()
     {
-        healthText.text = "Health: " + health;
-
+        detectionText.text = "Detection Rate: " + detectionNumber + "%";
     }
 }

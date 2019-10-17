@@ -1122,8 +1122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 108.75, y: 0}
-  m_SizeDelta: {x: 217.5, y: 0}
+  m_AnchoredPosition: {x: 136.5, y: 0}
+  m_SizeDelta: {x: 273, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22230922
 CanvasRenderer:
@@ -3785,7 +3785,7 @@ RectTransform:
   m_GameObject: {fileID: 162630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99539, y: 0.99539, z: 0.99539}
   m_Children:
   - {fileID: 22450706}
   m_Father: {fileID: 0}
@@ -3793,7 +3793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.21795654, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22221378
@@ -3849,7 +3849,7 @@ MonoBehaviour:
   textTable: {fileID: 0}
   noActiveQuestsText: No Active Quests
   noCompletedQuestsText: No Completed Quests
-  checkVisibleField: 0
+  checkVisibleField: 1
   questHeadingSource: 0
   abandonQuestState: 1
   pauseWhileOpen: 1
