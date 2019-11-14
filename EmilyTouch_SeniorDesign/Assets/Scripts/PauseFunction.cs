@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseFunction : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PauseFunction : MonoBehaviour
     public bool isPaused;
     public GameObject pauseCanvas;
     private int lastPressed;
+    public Button resumeButton;
+    public Button exitButton;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,9 @@ public class PauseFunction : MonoBehaviour
             pauseCanvas.SetActive(false);
             Time.timeScale = 1f;
         }
+
+        resumeButton.onClick.AddListener(Resume);
+        exitButton.onClick.AddListener(QuitLevel);
     }
 
     // Update is called once per frame
@@ -50,6 +56,15 @@ public class PauseFunction : MonoBehaviour
                 Debug.Log("everybody clap yo hands");
             }
         }
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+        pauseCanvas.SetActive(false);
+        Time.timeScale = 1f;
+        Debug.Log("woo");
+        lastPressed = 0;
     }
 
     public void QuitLevel()

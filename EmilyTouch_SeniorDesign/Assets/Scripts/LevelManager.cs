@@ -6,15 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public Text actionText;
     private bool playerInExit;
     public string levelToLoad;
+    public Text levelText;
+    public string currentLevel;
 
     // Start is called before the first frame update
     void Start()
     {
         
         playerInExit = false;
+        SetLevelText();
         
     }
 
@@ -26,7 +28,6 @@ public class LevelManager : MonoBehaviour
             PlayerPrefs.SetString(levelToLoad, SceneManager.GetActiveScene().name);
             PlayerPrefs.Save();
             SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
-            actionText.text = "";
         }
     }
 
@@ -35,7 +36,6 @@ public class LevelManager : MonoBehaviour
         if(collision.tag == "Player")
         {
             Debug.Log("oh????");
-            actionText.text = "Leave";
             playerInExit = true;
         }
     }
@@ -45,8 +45,12 @@ public class LevelManager : MonoBehaviour
         if(collision.tag == "Player")
         {
             Debug.Log("oh...");
-            actionText.text = "";
             playerInExit = false;
         }
+    }
+
+    public void SetLevelText()
+    {
+        levelText.text = "Area: " + currentLevel;
     }
 }

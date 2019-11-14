@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    public float detectionNumber; 
+    public float detectionNumber;
+    public float energy;
+
     private static bool playerExists;
     public Text detectionText;
+    public Text energyText;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
         detectionNumber = 0;
         SetDetectionText();
+        SetEnergyText();
     }
 
     // Update is called once per frame
@@ -66,6 +70,10 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        if (detectionNumber == 100)
+        {
+
+        }
     }
 
     void FixedUpdate()
@@ -79,5 +87,10 @@ public class PlayerController : MonoBehaviour
     public void SetDetectionText()
     {
         detectionText.text = "Detection Rate: " + detectionNumber + "%";
+    }
+
+    public void SetEnergyText()
+    {
+        energyText.text = "Energy: " + energy;
     }
 }

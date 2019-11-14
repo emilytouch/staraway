@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 22281022}
   - component: {fileID: 11493008}
   - component: {fileID: 11441550}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 11450908}
   - component: {fileID: 11499948}
   - component: {fileID: 11405680}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scroll Rect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22496680}
   - component: {fileID: 11424526}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Basic Standard Dialogue UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 11461066}
   - component: {fileID: 11423052}
   - component: {fileID: 11451262}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 11435794}
   - component: {fileID: 11499922}
   - component: {fileID: 11477444}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 11424752}
   - component: {fileID: 11483934}
   - component: {fileID: 11466480}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: NPC Subtitle Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 72}
+  m_AnchoredPosition: {x: 0, y: 103}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &22253428
@@ -722,7 +722,7 @@ MonoBehaviour:
     m_Right: 4
     m_Top: 4
     m_Bottom: 4
-  m_ChildAlignment: 4
+  m_ChildAlignment: 7
   m_Spacing: 4
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
-  m_VerticalFit: 2
+  m_VerticalFit: 1
 --- !u!114 &11466480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ MonoBehaviour:
   subtitleText:
     m_uiText: {fileID: 11445008}
     m_textMeshProUGUI: {fileID: 0}
-  addSpeakerName: 0
+  addSpeakerName: 1
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
   delayTypewriterUntilOpen: 0
@@ -819,7 +819,7 @@ GameObject:
   - component: {fileID: 22281526}
   - component: {fileID: 11425710}
   - component: {fileID: 11400186}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -916,7 +916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22472254}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -959,7 +959,7 @@ GameObject:
   - component: {fileID: 11468914}
   - component: {fileID: 9567330}
   - component: {fileID: 11457502}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Alert Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 22272358}
   - component: {fileID: 11422712}
   - component: {fileID: 11497068}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Portrait Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 11473704}
   - component: {fileID: 11430224}
   - component: {fileID: 11410188}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Subtitle Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 22580066}
   - component: {fileID: 9590998}
   - component: {fileID: 11458734}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Dialogue Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 22288868}
   - component: {fileID: 11495484}
   - component: {fileID: 11433550}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scroll Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   - component: {fileID: 11458418}
   - component: {fileID: 11432276}
   - component: {fileID: 11413806}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: PC Subtitle Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ GameObject:
   - component: {fileID: 11456524}
   - component: {fileID: 11417198}
   - component: {fileID: 11474474}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Portrait Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1999,7 +1999,7 @@ GameObject:
   - component: {fileID: 22498406}
   - component: {fileID: 22227490}
   - component: {fileID: 11455562}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2075,7 +2075,7 @@ GameObject:
   - component: {fileID: 22228422}
   - component: {fileID: 11422768}
   - component: {fileID: 11458604}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Divider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2171,7 +2171,7 @@ GameObject:
   - component: {fileID: 22213980}
   - component: {fileID: 11405928}
   - component: {fileID: 11444196}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Portrait Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,7 +2267,7 @@ GameObject:
   - component: {fileID: 22223450}
   - component: {fileID: 11450778}
   - component: {fileID: 11417042}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Divider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,7 +2362,7 @@ GameObject:
   - component: {fileID: 22469686}
   - component: {fileID: 22223000}
   - component: {fileID: 11484472}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: QTE 0 Good
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 11411984}
   - component: {fileID: 11408284}
   - component: {fileID: 11483732}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Alert Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2552,7 +2552,7 @@ GameObject:
   - component: {fileID: 11499256}
   - component: {fileID: 11457062}
   - component: {fileID: 11498042}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Response Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2670,7 +2670,7 @@ GameObject:
   - component: {fileID: 11485034}
   - component: {fileID: 11438106}
   - component: {fileID: 11403010}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2863,7 +2863,7 @@ GameObject:
   - component: {fileID: 22243452}
   - component: {fileID: 11482492}
   - component: {fileID: 11484772}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 11438236}
   - component: {fileID: 11462680}
   - component: {fileID: 11430624}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Response Button Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3163,7 +3163,7 @@ GameObject:
   - component: {fileID: 11419828}
   - component: {fileID: 22510962}
   - component: {fileID: 9558232}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text Field Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3309,7 +3309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22418282}
   - component: {fileID: 11448592}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text Field UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3403,7 +3403,7 @@ GameObject:
   - component: {fileID: 11413662}
   - component: {fileID: 11483786}
   - component: {fileID: 11452754}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: InputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3571,7 +3571,7 @@ GameObject:
   - component: {fileID: 22498666}
   - component: {fileID: 22225464}
   - component: {fileID: 11455540}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3650,7 +3650,7 @@ GameObject:
   - component: {fileID: 22481992}
   - component: {fileID: 22257704}
   - component: {fileID: 11494592}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3727,7 +3727,7 @@ GameObject:
   - component: {fileID: 11473894}
   - component: {fileID: 11468546}
   - component: {fileID: 11446000}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Portrait Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3844,7 +3844,7 @@ GameObject:
   - component: {fileID: 11451356}
   - component: {fileID: 11420542}
   - component: {fileID: 11417816}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Continue Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4009,7 +4009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22489492}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4045,7 +4045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22495498}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: QTEs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4084,7 +4084,7 @@ GameObject:
   - component: {fileID: 22436064}
   - component: {fileID: 22223126}
   - component: {fileID: 11437824}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4159,7 +4159,7 @@ GameObject:
   - component: {fileID: 22472742}
   - component: {fileID: 22257836}
   - component: {fileID: 11477048}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: QTE 1 Evil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4235,7 +4235,7 @@ GameObject:
   - component: {fileID: 9508472}
   - component: {fileID: 11411294}
   - component: {fileID: 11486648}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Response Menu Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4261,7 +4261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 277.44}
+  m_AnchoredPosition: {x: 0, y: 264}
   m_SizeDelta: {x: 0, y: 159.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &22259886
@@ -4441,7 +4441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22454240}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4481,7 +4481,7 @@ GameObject:
   - component: {fileID: 11467452}
   - component: {fileID: 11447230}
   - component: {fileID: 11408064}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4627,7 +4627,7 @@ GameObject:
   - component: {fileID: 22422554}
   - component: {fileID: 22267948}
   - component: {fileID: 11418480}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4709,7 +4709,7 @@ GameObject:
   - component: {fileID: 11435868}
   - component: {fileID: 11400246}
   - component: {fileID: 11484188}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Subtitle Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

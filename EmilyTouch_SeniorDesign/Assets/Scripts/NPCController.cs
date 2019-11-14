@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using PixelCrushers.DialogueSystem;
 
 public class NPCController : MonoBehaviour
 {
-    public Text actionText;
     private int lastPressed;
 
     // Start is called before the first frame update

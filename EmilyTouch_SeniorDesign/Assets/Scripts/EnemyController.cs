@@ -7,26 +7,39 @@ public class EnemyController : MonoBehaviour
 {
     private bool playerNear;
     public float enemySpeed;
-
+    Rigidbody2D rb2d;
     private bool isMoving;
-    
+    public bool moveRight;
+
+    public Transform wallCheck;
+    public float wallCheckRadius;
+    public LayerMask whatIsWall;
+    private bool hitWall;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerNear == true)
+        hitWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
+        if (hitWall)
         {
+            moveRight = !moveRight;
+        }
 
+        if (moveRight)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+            rb2d.velocity = new Vector2(enemySpeed, rb2d.velocity.y);
         }
         else
         {
-
+            transform.localScale = new Vector3(1f, 1f, 1f);
+            rb2d.velocity = new Vector2(-enemySpeed, rb2d.velocity.y);
         }
     }
     void OnTriggerStay2D(Collider2D other)

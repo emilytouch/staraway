@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 22476578}
   - component: {fileID: 22255000}
   - component: {fileID: 11421820}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 22459650}
   - component: {fileID: 22290622}
   - component: {fileID: 11413106}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22419024}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 11415598}
   - component: {fileID: 22251914}
   - component: {fileID: 11449092}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 11419926}
   - component: {fileID: 11468506}
   - component: {fileID: 11484122}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Heading Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 22431844}
   - component: {fileID: 22273242}
   - component: {fileID: 11469572}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 11442834}
   - component: {fileID: 11469808}
   - component: {fileID: 11400152}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Completed Quests Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 11417498}
   - component: {fileID: 11491772}
   - component: {fileID: 11492404}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Confirm Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 11459826}
   - component: {fileID: 11445082}
   - component: {fileID: 11481080}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Entry Active Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 22285646}
   - component: {fileID: 11427206}
   - component: {fileID: 11407600}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Main Content Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,7 +1015,7 @@ GameObject:
   - component: {fileID: 22469798}
   - component: {fileID: 11406400}
   - component: {fileID: 11455802}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Selected Quest Details Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 11489698}
   - component: {fileID: 11419764}
   - component: {fileID: 11436452}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Interior Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,8 +1122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 136.5, y: 0}
-  m_SizeDelta: {x: 273, y: 0}
+  m_AnchoredPosition: {x: 8, y: 0}
+  m_SizeDelta: {x: 16, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22230922
 CanvasRenderer:
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 22455066}
   - component: {fileID: 22272478}
   - component: {fileID: 11487986}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Showing Completed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 22291704}
   - component: {fileID: 11474276}
   - component: {fileID: 11414442}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 22236094}
   - component: {fileID: 11411222}
   - component: {fileID: 11441886}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1494,7 +1494,7 @@ GameObject:
   - component: {fileID: 11488726}
   - component: {fileID: 11410206}
   - component: {fileID: 11499706}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Abandon Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1636,7 +1636,7 @@ GameObject:
   - component: {fileID: 11482852}
   - component: {fileID: 11459064}
   - component: {fileID: 11495446}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Track Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 11448924}
   - component: {fileID: 11438886}
   - component: {fileID: 11494650}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Abandon Button Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 11488086}
   - component: {fileID: 11412978}
   - component: {fileID: 11436604}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Abandon Quest Confirmation Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2014,7 +2014,7 @@ GameObject:
   - component: {fileID: 22455308}
   - component: {fileID: 22201054}
   - component: {fileID: 11478334}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Selection Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2092,7 +2092,7 @@ GameObject:
   - component: {fileID: 11486952}
   - component: {fileID: 11401308}
   - component: {fileID: 11454818}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Active Quests Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2244,7 +2244,7 @@ GameObject:
   - component: {fileID: 22439574}
   - component: {fileID: 22216216}
   - component: {fileID: 11405564}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2321,7 +2321,7 @@ GameObject:
   - component: {fileID: 11444152}
   - component: {fileID: 11454908}
   - component: {fileID: 11438342}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Completed Quest Title Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 11468178}
   - component: {fileID: 22211306}
   - component: {fileID: 11451562}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 11469932}
   - component: {fileID: 11441632}
   - component: {fileID: 11481438}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Completed Quest Heading Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2733,7 +2733,7 @@ GameObject:
   - component: {fileID: 22447718}
   - component: {fileID: 22228592}
   - component: {fileID: 11494582}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2811,7 +2811,7 @@ GameObject:
   - component: {fileID: 11432834}
   - component: {fileID: 11407766}
   - component: {fileID: 11462688}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Group Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2952,7 +2952,7 @@ GameObject:
   - component: {fileID: 11475640}
   - component: {fileID: 11428720}
   - component: {fileID: 11473988}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Entry Success Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3063,7 +3063,7 @@ GameObject:
   - component: {fileID: 11485500}
   - component: {fileID: 11479106}
   - component: {fileID: 11494868}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Abandon Quest Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3180,7 +3180,7 @@ GameObject:
   - component: {fileID: 22529778}
   - component: {fileID: 9527512}
   - component: {fileID: 11452756}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Main Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3326,7 +3326,7 @@ GameObject:
   - component: {fileID: 11455502}
   - component: {fileID: 11415722}
   - component: {fileID: 11421068}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Description Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3437,7 +3437,7 @@ GameObject:
   - component: {fileID: 11403458}
   - component: {fileID: 11465210}
   - component: {fileID: 11495842}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Active Quest Title Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3552,7 +3552,7 @@ GameObject:
   - component: {fileID: 11432672}
   - component: {fileID: 22237692}
   - component: {fileID: 11416972}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3642,7 +3642,7 @@ GameObject:
   - component: {fileID: 22232120}
   - component: {fileID: 11446052}
   - component: {fileID: 11477214}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3749,8 +3749,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11494582}
   m_HandleRect: {fileID: 22447718}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3769,7 +3769,8 @@ GameObject:
   - component: {fileID: 22221378}
   - component: {fileID: 11452156}
   - component: {fileID: 11400838}
-  m_Layer: 5
+  - component: {fileID: 234620306}
+  m_Layer: 9
   m_Name: Basic Standard UI Quest Log Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3909,6 +3910,21 @@ MonoBehaviour:
   addEventSystemIfNeeded: 1
   foldoutToSelect: 
   questTitleToSelect: 
+--- !u!114 &234620306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cf523ba89902b4096edc7b521eebfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 106
+  buttonName: 
+  questLogWindow: {fileID: 11400838}
 --- !u!1 &165220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,7 +3936,7 @@ GameObject:
   - component: {fileID: 22423904}
   - component: {fileID: 22216158}
   - component: {fileID: 11469012}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3996,7 +4012,7 @@ GameObject:
   - component: {fileID: 22451830}
   - component: {fileID: 11444728}
   - component: {fileID: 11478940}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Titles Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4076,7 +4092,7 @@ GameObject:
   - component: {fileID: 11403056}
   - component: {fileID: 11418844}
   - component: {fileID: 11423302}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Track Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4197,7 +4213,7 @@ GameObject:
   - component: {fileID: 22255444}
   - component: {fileID: 11406956}
   - component: {fileID: 11488222}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Group Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4290,7 +4306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22464092}
   - component: {fileID: 11427450}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Flexible Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4348,7 +4364,7 @@ GameObject:
   - component: {fileID: 22258646}
   - component: {fileID: 11433896}
   - component: {fileID: 11459138}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4450,7 +4466,7 @@ GameObject:
   - component: {fileID: 22460958}
   - component: {fileID: 22283772}
   - component: {fileID: 11408754}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4527,7 +4543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22430292}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4567,7 +4583,7 @@ GameObject:
   - component: {fileID: 11420970}
   - component: {fileID: 11455794}
   - component: {fileID: 11493954}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Entry Failure Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4677,7 +4693,7 @@ GameObject:
   - component: {fileID: 22218714}
   - component: {fileID: 11427372}
   - component: {fileID: 11409764}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Window Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4771,7 +4787,7 @@ GameObject:
   - component: {fileID: 22466470}
   - component: {fileID: 22290732}
   - component: {fileID: 11462008}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Details Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,7 +4864,7 @@ GameObject:
   - component: {fileID: 22234602}
   - component: {fileID: 11410068}
   - component: {fileID: 11462546}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4955,8 +4971,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11405564}
   m_HandleRect: {fileID: 22439574}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4975,7 +4991,7 @@ GameObject:
   - component: {fileID: 22221542}
   - component: {fileID: 11414100}
   - component: {fileID: 11469552}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Panel Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5069,7 +5085,7 @@ GameObject:
   - component: {fileID: 22474374}
   - component: {fileID: 22233130}
   - component: {fileID: 11467252}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5151,7 +5167,7 @@ GameObject:
   - component: {fileID: 22221994}
   - component: {fileID: 11438330}
   - component: {fileID: 11453284}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Bottom Button Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5258,7 +5274,7 @@ GameObject:
   - component: {fileID: 11469894}
   - component: {fileID: 22290434}
   - component: {fileID: 11498076}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5367,7 +5383,7 @@ GameObject:
   - component: {fileID: 22469954}
   - component: {fileID: 22284462}
   - component: {fileID: 11413288}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Showing Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5449,7 +5465,7 @@ GameObject:
   - component: {fileID: 11482686}
   - component: {fileID: 11444116}
   - component: {fileID: 11438050}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5617,7 +5633,7 @@ GameObject:
   - component: {fileID: 11454642}
   - component: {fileID: 11475138}
   - component: {fileID: 11408158}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Cancel Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5778,7 +5794,7 @@ GameObject:
   - component: {fileID: 11432858}
   - component: {fileID: 11487614}
   - component: {fileID: 11491532}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Active Quest Heading Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5964,7 +5980,7 @@ GameObject:
   - component: {fileID: 11496716}
   - component: {fileID: 11414438}
   - component: {fileID: 11444678}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Quest Group Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6105,7 +6121,7 @@ GameObject:
   - component: {fileID: 22407206}
   - component: {fileID: 22225148}
   - component: {fileID: 11430496}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6184,7 +6200,7 @@ GameObject:
   - component: {fileID: 22401766}
   - component: {fileID: 22224580}
   - component: {fileID: 11470506}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

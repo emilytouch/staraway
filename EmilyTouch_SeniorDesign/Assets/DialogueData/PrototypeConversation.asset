@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1.0
   author: Emily Touch
-  description: Test Conversation to Show off in Prototype Presentation
+  description: Tutorial Quest to Introduce Mechanics to Player
   globalUserScript: 
   emphasisSettings:
   - color: {r: 1, g: 1, b: 1, a: 1}
