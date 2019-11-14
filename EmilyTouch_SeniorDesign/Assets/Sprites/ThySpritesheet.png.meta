@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: dc17369a2e868c646b58024fe8dc5715
+guid: 88fc35def28e37448918773f629f56b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2786475732074625853
-    second: alfanStanding
-  - first:
-      213: -1426790471357470633
-    second: sprite-sheet_1
+      213: 1981983827133056746
+    second: ThyIdle
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -104,22 +101,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alfanStanding
+      name: ThyIdle
       rect:
         serializedVersion: 2
-        x: 74
-        y: 62
-        width: 47
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 70
+        y: 58
+        width: 31
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c826d9fc7714b1d4e841a2501309726d
-      internalID: 2786475732074625853
+      spriteID: ee5afb5700338024b803c4ecae26ddff
+      internalID: 1981983827133056746
       vertices: []
       indices: 
       edges: []

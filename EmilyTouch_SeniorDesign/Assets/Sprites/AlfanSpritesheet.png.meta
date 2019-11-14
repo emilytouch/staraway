@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 88fc35def28e37448918773f629f56b8
+guid: dc17369a2e868c646b58024fe8dc5715
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1981983827133056746
-    second: ThyIdle
+      213: 2786475732074625853
+    second: alfanIdle
+  - first:
+      213: -1426790471357470633
+    second: sprite-sheet_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,22 +104,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThyIdle
+      name: alfanIdle
       rect:
         serializedVersion: 2
-        x: 68
-        y: 56
-        width: 38
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 65
+        width: 41
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee5afb5700338024b803c4ecae26ddff
-      internalID: 1981983827133056746
+      spriteID: c826d9fc7714b1d4e841a2501309726d
+      internalID: 2786475732074625853
       vertices: []
       indices: 
       edges: []

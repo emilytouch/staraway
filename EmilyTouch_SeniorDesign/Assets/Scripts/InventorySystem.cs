@@ -57,7 +57,7 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
-    void TaskOnClick()
+    public void TaskOnClick()
     {
         invCanvas.SetActive(true);
         Time.timeScale = 0;

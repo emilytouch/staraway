@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1594731781001712280}
   - component: {fileID: 1594731781001712282}
   - component: {fileID: 1594731781001712283}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 1594731781049416641}
   - component: {fileID: 1594731781049416643}
   - component: {fileID: 1594731781049416640}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 1594731781264957125}
   - component: {fileID: 1594731781264957122}
   - component: {fileID: 1594731781264957123}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: OptionsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 1594731781298042570}
   - component: {fileID: 1594731781298042572}
   - component: {fileID: 1594731781298042573}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 1594731781360243502}
   - component: {fileID: 1594731781360243503}
   - component: {fileID: 1594731781360243500}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: PartyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 1594731781456333629}
   - component: {fileID: 1594731781456333631}
   - component: {fileID: 1594731781456333628}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 1594731781513545154}
   - component: {fileID: 1594731781513545155}
   - component: {fileID: 1594731781513545152}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: LoadButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 1594731781556433735}
   - component: {fileID: 1594731781556433753}
   - component: {fileID: 1594731781556433734}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 1594731781581710437}
   - component: {fileID: 1594731781581710434}
   - component: {fileID: 1594731781581710435}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1136,7 +1136,7 @@ GameObject:
   - component: {fileID: 1594731781619828193}
   - component: {fileID: 1594731781619828206}
   - component: {fileID: 1594731781619828207}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1237,7 +1237,7 @@ GameObject:
   - component: {fileID: 1594731781676256866}
   - component: {fileID: 1594731781676256867}
   - component: {fileID: 1594731781676256864}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: InventoryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,7 +1358,7 @@ GameObject:
   - component: {fileID: 1594731781938291607}
   - component: {fileID: 1594731781938291625}
   - component: {fileID: 1594731781938291606}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ GameObject:
   - component: {fileID: 1594731781961283366}
   - component: {fileID: 1594731781961283384}
   - component: {fileID: 1594731781961283385}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594731781962039867}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 1594731781963988904}
   - component: {fileID: 1594731781963988905}
   - component: {fileID: 1594731781963988886}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: SaveButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1834,7 +1834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594731781982491664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1867,7 +1867,7 @@ GameObject:
   - component: {fileID: 1594731782049239151}
   - component: {fileID: 1594731782049239137}
   - component: {fileID: 1594731782049239150}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2024,7 +2024,7 @@ GameObject:
   - component: {fileID: 1594731782553160007}
   - component: {fileID: 1594731782553160025}
   - component: {fileID: 1594731782553160006}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 1594731782873059895}
   - component: {fileID: 1594731782873059892}
   - component: {fileID: 1594731782873059893}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,9 +2318,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 239656533693211156, guid: 989a771fdc6c3f0488d766b6455f8633,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 239656533693211156, guid: 989a771fdc6c3f0488d766b6455f8633,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
+        type: 3}
+      propertyPath: itemSprite
+      value: 
+      objectReference: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 239656533693211154, guid: 989a771fdc6c3f0488d766b6455f8633,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2390,46 +2400,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.6927899
-      objectReference: {fileID: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: actionText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: itemDisplay
-      value: 
-      objectReference: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: sprite
-      value: 
-      objectReference: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: itemSprite
-      value: 
-      objectReference: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 239656533693211152, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: pickUpText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 239656533693211157, guid: 989a771fdc6c3f0488d766b6455f8633,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989a771fdc6c3f0488d766b6455f8633, type: 3}

@@ -9,7 +9,7 @@ public class PartyMembers : MonoBehaviour
     public float relationshipLevel;
     public bool isParty;
     public bool isFriends;
-    public bool isRomanced;
+    public bool isMaxed;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,18 @@ public class PartyMembers : MonoBehaviour
         if (relationshipLevel <= 0)
         {
             relationshipLevel = 0;
+            isParty = true;
+        }
+
+        if (relationshipLevel == 50)
+        {
+            isFriends = true;
+        }
+
+        if (relationshipLevel >= 100)
+        {
+            relationshipLevel = 100;
+            isMaxed = true;
         }
     }
 }
