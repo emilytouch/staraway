@@ -118,6 +118,25 @@ MonoBehaviour:
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
+  - id: 2
+    fields:
+    - title: Name
+      value: Alfan's Trinket
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: A necklace to help ward off bad energy. Hope this works well with Space
+        Soldiers.
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Is Item
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations: []
   variables:
   - id: 1
@@ -146,6 +165,20 @@ MonoBehaviour:
       typeString: CustomFieldType_Number
     - title: Description
       value: Pizza Collected
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 3
+    fields:
+    - title: Name
+      value: Alfan's Trinket
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 2
+      type: 6
+      typeString: CustomFieldType_Item
+    - title: Description
+      value: Item collected
       type: 0
       typeString: CustomFieldType_Text
   conversations:
@@ -670,7 +703,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Thank you so much!
+        value: Thank you so much! Here's your payment.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical

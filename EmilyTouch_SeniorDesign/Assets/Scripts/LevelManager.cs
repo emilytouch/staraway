@@ -53,4 +53,9 @@ public class LevelManager : MonoBehaviour
     {
         levelText.text = "Area: " + currentLevel;
     }
+
+    public void RetryLevel()
+    {
+        SceneManager.LoadScene("ShipLevel");
+    }
 }

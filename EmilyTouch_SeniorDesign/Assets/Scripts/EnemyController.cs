@@ -10,7 +10,9 @@ public class EnemyController : MonoBehaviour
     Rigidbody2D rb2d;
     private bool isMoving;
     public bool moveRight;
+    public bool moveUp;
 
+    public float enemyNumber;
     public Transform wallCheck;
     public float wallCheckRadius;
     public LayerMask whatIsWall;
@@ -28,18 +30,50 @@ public class EnemyController : MonoBehaviour
         hitWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
         if (hitWall)
         {
-            moveRight = !moveRight;
+            if (enemyNumber == 1)
+            {
+                moveRight = !moveRight;
+
+            }
+            if (enemyNumber == 0)
+            {
+                moveUp = !moveUp;
+
+            }
+        }
+        
+        if (enemyNumber == 1)
+        {
+            if (moveRight)
+            {
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+                rb2d.velocity = new Vector2(enemySpeed, rb2d.velocity.y);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+                rb2d.velocity = new Vector2(-enemySpeed, rb2d.velocity.y);
+            }
         }
 
-        if (moveRight)
+        if (enemyNumber == 0)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-            rb2d.velocity = new Vector2(enemySpeed, rb2d.velocity.y);
+            if (moveUp)
+            {
+                transform.localScale = new Vector3(1f, -1f, 1f);
+                rb2d.velocity = new Vector2(rb2d.velocity.x, enemySpeed);
+            }
+
+            else
+            {
+                transform.localScale = new Vector3(1f, 1f, 1f);
+                rb2d.velocity = new Vector2(rb2d.velocity.x, -enemySpeed);
+            }
         }
-        else
+
+        if (GameObject.Find("Player").GetComponent<PlayerController>().detectionNumber == 100)
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-            rb2d.velocity = new Vector2(-enemySpeed, rb2d.velocity.y);
+            enemySpeed = 0;
         }
     }
     void OnTriggerStay2D(Collider2D other)

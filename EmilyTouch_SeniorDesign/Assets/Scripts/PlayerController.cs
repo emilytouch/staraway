@@ -9,10 +9,12 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float detectionNumber;
     public float energy;
+    public Rigidbody2D rb2d;
 
     private static bool playerExists;
     public Text detectionText;
     public Text energyText;
+    public GameObject gameOverScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -30,14 +32,15 @@ public class PlayerController : MonoBehaviour
         detectionNumber = 0;
         SetDetectionText();
         SetEnergyText();
+        gameOverScreen.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.RightShift) && (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W)))
         {
-            speed += 2;
+            speed += 3;
         }
         if (Input.GetKeyUp(KeyCode.RightShift))
         {
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour
             detectionNumber += 1;
             SetDetectionText();
         }
-        else
+        if (speed == 1)
         {
             detectionNumber -= 1;
             SetDetectionText();
@@ -72,7 +75,10 @@ public class PlayerController : MonoBehaviour
 
         if (detectionNumber == 100)
         {
-
+            rb2d.Sleep();
+            gameOverScreen.SetActive(true);
+            detectionNumber = 100;
+            SetDetectionText();
         }
     }
 
