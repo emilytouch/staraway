@@ -33,6 +33,8 @@ public class PauseFunction : MonoBehaviour
             Time.timeScale = 1f;
         }
 
+        partyCanvas.SetActive(false);
+
         resumeButton.onClick.AddListener(Resume);
         exitButton.onClick.AddListener(QuitLevel);
     }
@@ -77,7 +79,16 @@ public class PauseFunction : MonoBehaviour
         Time.timeScale = 0f;
         lastPressed = 1;
 
+    }public void Back()
+    {
+        isPaused = true;
+        pauseCanvas.SetActive(true);
+        partyCanvas.SetActive(false);
+        GameObject.Find("Menu").GetComponent
+        
     }
+
+
 
     public void QuitLevel()
     {
