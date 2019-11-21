@@ -807,8 +807,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 268.2963
-        y: 141.40741
+        x: 243.2963
+        y: 134.00002
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}

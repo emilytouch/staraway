@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 177282066}
   - component: {fileID: 177282065}
   m_Layer: 0
-  m_Name: NexusIdle
+  m_Name: Nexis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1589,7 +1589,7 @@ GameObject:
   - component: {fileID: 1083130598}
   - component: {fileID: 1083130597}
   m_Layer: 0
-  m_Name: ThyIdle
+  m_Name: Thy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1777,7 +1777,7 @@ GameObject:
   - component: {fileID: 1214577842}
   - component: {fileID: 1214577841}
   m_Layer: 0
-  m_Name: arcanumIdle
+  m_Name: Arcanum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2279,7 +2279,7 @@ GameObject:
   - component: {fileID: 1414215823}
   - component: {fileID: 1414215822}
   m_Layer: 0
-  m_Name: alfanStanding
+  m_Name: Alfan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

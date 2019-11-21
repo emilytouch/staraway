@@ -8,7 +8,10 @@ public class PauseFunction : MonoBehaviour
 {
     public string mainMenu;
     public bool isPaused;
+
     public GameObject pauseCanvas;
+    public GameObject partyCanvas;
+
     private int lastPressed;
     public Button resumeButton;
     public Button exitButton;
@@ -65,6 +68,15 @@ public class PauseFunction : MonoBehaviour
         Time.timeScale = 1f;
         Debug.Log("woo");
         lastPressed = 0;
+    }
+
+    public void PartyMenu()
+    {
+        isPaused = true;
+        partyCanvas.SetActive(true);
+        Time.timeScale = 0f;
+        lastPressed = 1;
+
     }
 
     public void QuitLevel()

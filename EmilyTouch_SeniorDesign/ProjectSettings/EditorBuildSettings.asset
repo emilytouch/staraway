@@ -17,9 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheCity.unity
     guid: c4d5f7fb48fa2b840ae7ebc1b656ede4
-  - enabled: 1
-    path: Assets/Scenes/TheJungle.unity
-    guid: d5a16a8aa9925e74ebe6b91633e9f233
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 1bb29d8dd9ff0944fa4ca5b2d2395b5e

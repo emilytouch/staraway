@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: SpaceDogSprite (Auto-Backup)
+  m_Name: Level01Dialogue
   m_EditorClassIdentifier: 
-  version: 1.0.0
-  author: Emily Touch
-  description: Space Dog needs help, and it's up to the player to help save them.
+  version: 
+  author: 
+  description: 
   globalUserScript: 
   emphasisSettings:
   - color: {r: 1, g: 1, b: 1, a: 1}
@@ -142,7 +142,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Name
-      value: Relationship Level
+      value: relationshipLevel
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -150,7 +150,7 @@ MonoBehaviour:
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
-      value: The amount that Space Dog likes you.
+      value: How much Space Dog likes you
       type: 0
       typeString: CustomFieldType_Text
   - id: 2
@@ -160,9 +160,9 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: -1
-      type: 6
-      typeString: CustomFieldType_Item
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
     - title: Description
       value: It looks like you can use this to chop at all the destruction around
         Space Dog.
@@ -172,7 +172,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Title
-      value: Space Dog Help
+      value: SpaceDogHelp
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -257,7 +257,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -271,16 +271,16 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 0
         destinationConversationID: 1
-        destinationDialogueID: 1
+        destinationDialogueID: 12
         isConnector: 0
         priority: 2
       - originConversationID: 1
         originDialogueID: 0
         destinationConversationID: 1
-        destinationDialogueID: 7
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CurrentQuestState("Under Fire") == "unassigned"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -289,11 +289,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 402.68057
+        x: 400.32764
         y: 46.393433
         width: 160
         height: 30
-    - id: 1
+    - id: 12
       fields:
       - title: Title
         value: Intro to Quest
@@ -352,15 +352,15 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 1
+        originDialogueID: 12
         destinationConversationID: 1
-        destinationDialogueID: 2
+        destinationDialogueID: 13
         isConnector: 0
         priority: 2
       - originConversationID: 1
-        originDialogueID: 1
+        originDialogueID: 12
         destinationConversationID: 1
-        destinationDialogueID: 3
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       conditionsString: CurrentQuestState("Under Fire") == "unassigned"
@@ -372,11 +372,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 120.81914
-        y: 191.38968
+        x: 284.38715
+        y: 229.70212
         width: 160
         height: 30
-    - id: 2
+    - id: 13
       fields:
       - title: Title
         value: +5 relationship!
@@ -435,9 +435,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 2
+        originDialogueID: 13
         destinationConversationID: 1
-        destinationDialogueID: 4
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -449,11 +449,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1
-        y: 278.97717
+        x: 164.568
+        y: 317.2896
         width: 160
         height: 30
-    - id: 3
+    - id: 14
       fields:
       - title: Title
         value: Negative Points
@@ -512,9 +512,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 3
+        originDialogueID: 14
         destinationConversationID: 1
-        destinationDialogueID: 5
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -526,11 +526,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 210.3351
-        y: 279.42392
+        x: 375.1226
+        y: 317.73636
         width: 160
         height: 30
-    - id: 4
+    - id: 15
       fields:
       - title: Title
         value: 
@@ -589,10 +589,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: '
+      userScript: 'SetQuestState("Under Fire", "active");
 
-        Variable["Relationship_Level"] = Variable["Relationship_Level"]
-        + 5'
+        Variable["relationshipLevel"]
+        = Variable["relationshipLevel"] + 5'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -612,11 +612,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1
-        y: 458.46414
+        x: 164.568
+        y: 496.77658
         width: 160
         height: 30
-    - id: 5
+    - id: 16
       fields:
       - title: Title
         value: negative
@@ -675,9 +675,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 5
+        originDialogueID: 16
         destinationConversationID: 1
-        destinationDialogueID: 6
+        destinationDialogueID: 17
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -685,13 +685,13 @@ MonoBehaviour:
       onExecute:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 28296550527278537, guid: db33e3c8eba65784580a365145f4f07e,
+          - m_Target: {fileID: 7784090373084523533, guid: db33e3c8eba65784580a365145f4f07e,
               type: 3}
-            m_MethodName: RelationshipMinus
+            m_MethodName: 
             m_Mode: 1
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_ObjectArgumentAssemblyTypeName: 
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -701,11 +701,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 211.19888
-        y: 368.60483
+        x: 374.76688
+        y: 406.91727
         width: 160
         height: 30
-    - id: 6
+    - id: 17
       fields:
       - title: Title
         value: 
@@ -772,16 +772,28 @@ MonoBehaviour:
 '
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 28296550527278537, guid: db33e3c8eba65784580a365145f4f07e,
+              type: 3}
+            m_MethodName: RelationshipMinus
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
         m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 212.05109
-        y: 460.86844
+        x: 375.61908
+        y: 499.18088
         width: 160
         height: 30
-    - id: 7
+    - id: 18
       fields:
       - title: Title
         value: Quest in Progress
@@ -840,9 +852,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 7
+        originDialogueID: 18
         destinationConversationID: 1
-        destinationDialogueID: 9
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
       conditionsString: CurrentQuestState("Under Fire") == "active"
@@ -854,11 +866,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 435.6068
-        y: 198.44855
+        x: 600.39435
+        y: 236.76099
         width: 160
         height: 30
-    - id: 9
+    - id: 19
       fields:
       - title: Title
         value: 
@@ -917,13 +929,12 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
-        originDialogueID: 9
+        originDialogueID: 19
         destinationConversationID: 1
-        destinationDialogueID: 10
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
-      conditionsString: Item["Fireman's_Axe"].Is_Item == true and (Variable["Fireman's_Axe"]
-        == "")
+      conditionsString: (Variable["Fireman's_Axe"] == 1)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -932,11 +943,11 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 434.34097
-        y: 347.18265
+        x: 597.90894
+        y: 385.4951
         width: 160
         height: 30
-    - id: 10
+    - id: 20
       fields:
       - title: Title
         value: 
@@ -993,7 +1004,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 20
+        destinationConversationID: 1
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 'SetQuestState("Under Fire", "success");
 
@@ -1017,16 +1034,99 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 7784090373084523533, guid: db33e3c8eba65784580a365145f4f07e,
+              type: 3}
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
         m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 436.87274
-        y: 435.15738
+        x: 600.44073
+        y: 473.46982
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 7.5949097}
-    canvasZoom: 0.7900002
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Oh! Are you going to help me now?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: 
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      canvasRect:
+        serializedVersion: 2
+        x: 596.78217
+        y: 558.8357
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 62.762688, y: 0}
+    canvasZoom: 0.8200002
   syncInfo:
     syncActors: 0
     syncItems: 0

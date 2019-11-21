@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    public float detectionNumber;
-    public float energy;
+    public int detectionNumber;
+    public int energy;
     public Rigidbody2D rb2d;
 
     private static bool playerExists;
