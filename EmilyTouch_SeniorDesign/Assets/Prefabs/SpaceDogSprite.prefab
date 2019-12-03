@@ -72,7 +72,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7784090373084523536
 Transform:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3a75d8ed2b4564b981771e572cf81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relationshipLevel: 0
+  relationshipLevel: 10
   relationshipText: {fileID: 0}
   isParty: 0
   isFriends: 0

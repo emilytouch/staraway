@@ -11,6 +11,7 @@ public class PauseFunction : MonoBehaviour
 
     public GameObject pauseCanvas;
     public GameObject partyCanvas;
+    public GameObject invCanvas;
 
     private int lastPressed;
     public Button resumeButton;
@@ -34,7 +35,6 @@ public class PauseFunction : MonoBehaviour
         }
 
         partyCanvas.SetActive(false);
-
         resumeButton.onClick.AddListener(Resume);
         exitButton.onClick.AddListener(QuitLevel);
     }
@@ -67,6 +67,8 @@ public class PauseFunction : MonoBehaviour
     {
         isPaused = false;
         pauseCanvas.SetActive(false);
+        partyCanvas.SetActive(false);
+        invCanvas.SetActive(false);
         Time.timeScale = 1f;
         Debug.Log("woo");
         lastPressed = 0;
@@ -76,6 +78,7 @@ public class PauseFunction : MonoBehaviour
     {
         isPaused = true;
         partyCanvas.SetActive(true);
+        pauseCanvas.SetActive(false);
         Time.timeScale = 0f;
         lastPressed = 1;
 
@@ -84,14 +87,27 @@ public class PauseFunction : MonoBehaviour
         isPaused = true;
         pauseCanvas.SetActive(true);
         partyCanvas.SetActive(false);
-        GameObject.Find("Menu").GetComponent
-        
+        invCanvas.SetActive(false);
+        Time.timeScale = 0f;
+        lastPressed = 1;
     }
 
-
+    public void Inventory()
+    {
+        invCanvas.SetActive(true);
+        pauseCanvas.SetActive(false);
+        partyCanvas.SetActive(false);
+        Time.timeScale = 0;
+        lastPressed = 1;
+    }
 
     public void QuitLevel()
     {
-        SceneManager.LoadScene(mainMenu);
+        SceneManager.LoadScene("MainMenu");
+        invCanvas.SetActive(true);
+        pauseCanvas.SetActive(false);
+        partyCanvas.SetActive(false);
+        Time.timeScale = 0;
+        lastPressed = 1;
     }
 }

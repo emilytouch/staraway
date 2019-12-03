@@ -8,7 +8,6 @@ public class InventorySystem : MonoBehaviour
     public GameObject[] inventory;
     public Button invButton;
     private int lastPressed;
-    public GameObject invCanvas;
 
     private static bool invExists;
 
@@ -16,7 +15,6 @@ public class InventorySystem : MonoBehaviour
     void Start()
     {
         lastPressed = 0;
-        invButton.onClick.AddListener(TaskOnClick);
         if (!invExists)
         {
             invExists = true;
@@ -31,7 +29,7 @@ public class InventorySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        /*if (Input.GetKeyDown(KeyCode.I))
         {
             if (lastPressed == 0)
             {
@@ -47,21 +45,6 @@ public class InventorySystem : MonoBehaviour
                 GameObject.Find("Player").GetComponent<PauseFunction>().pauseCanvas.SetActive(false);
 
             }
-        }
-
-        if (invCanvas.activeInHierarchy == true)
-        {
-            Time.timeScale = 0;
-            GameObject.Find("Player").GetComponent<PauseFunction>().pauseCanvas.SetActive(false);
-            lastPressed = 1;
-        }
-    }
-
-    public void TaskOnClick()
-    {
-        invCanvas.SetActive(true);
-        Time.timeScale = 0;
-        lastPressed = 1;
-        GameObject.Find("Player").GetComponent<PauseFunction>().pauseCanvas.SetActive(false);
+        }*/
     }
 }
