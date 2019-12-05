@@ -66,6 +66,8 @@ GameObject:
   - component: {fileID: 7615273047904668461}
   - component: {fileID: 7615273047904668460}
   - component: {fileID: 7615273047904668463}
+  - component: {fileID: 7615273048194615897}
+  - component: {fileID: 7615273048194615896}
   m_Layer: 0
   m_Name: AlfanSprite
   m_TagString: NPC
@@ -126,7 +128,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2786475732074625853, guid: dc17369a2e868c646b58024fe8dc5715,
+  m_Sprite: {fileID: -2416073046905271754, guid: dc17369a2e868c646b58024fe8dc5715,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -256,7 +258,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: b8ce5c8f96f501448860df1d5fca447f, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 8ae98594363778349ac6e113ee59e3f8, type: 2}
 --- !u!114 &7615273047904668462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,3 +484,39 @@ MonoBehaviour:
   m_restoreStateOnStart: 0
   m_usePlayerSpawnpoint: 0
   m_multiscene: 0
+--- !u!95 &7615273048194615897
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615273047904668455}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d000efef950f3a9439a5f729b1145159, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7615273048194615896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615273047904668455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3a75d8ed2b4564b981771e572cf81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relationshipLevel: 0
+  relationshipText: {fileID: 0}
+  isParty: 0
+  isFriends: 0
+  isMaxed: 0

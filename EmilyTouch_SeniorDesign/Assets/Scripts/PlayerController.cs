@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+
+public class Boundary
+{
+    public float xMin, xMax, yMin, yMax;
+}
+
 public class PlayerController : MonoBehaviour
 {
     public float speed;
@@ -15,6 +22,12 @@ public class PlayerController : MonoBehaviour
     public Text detectionText;
     public Text energyText;
     public GameObject gameOverScreen;
+
+    public Boundary boundaryy;
+
+    private Animator playerAnim;
+    private bool playerMoving;
+    private Vector2 lastMoved;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +41,8 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        rb2d = GetComponent<Rigidbody2D>();
+        playerAnim = GetComponent<Animator>();
 
         detectionNumber = 0;
         SetDetectionText();
@@ -38,6 +53,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerMoving = false;
+
         if (Input.GetKeyDown(KeyCode.RightShift) && (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W)))
         {
             speed += 3;
@@ -48,55 +65,78 @@ public class PlayerController : MonoBehaviour
         }
 
         if (speed >= 3)
+         {
+             detectionNumber += 1;
+             SetDetectionText();
+         }
+         if (speed == 1)
+         {
+             detectionNumber -= 1;
+             SetDetectionText();
+
+         }
+
+         if(Input.GetAxisRaw("Horizontal")>0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
-            detectionNumber += 1;
-            SetDetectionText();
+            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0f, 0f));
+            playerMoving = true;
+            lastMoved = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
         }
-        if (speed == 1)
+
+        if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
         {
-            detectionNumber -= 1;
-            SetDetectionText();
+            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * speed * Time.deltaTime, 0f));
+            playerMoving = true;
+            lastMoved = new Vector2(0f, Input.GetAxisRaw("Vertical"));
 
         }
 
         if (detectionNumber >= 100)
+         {
+             detectionNumber = 100;
+             SetDetectionText();
+
+         }
+
+         if (detectionNumber <= 0)
+         {
+             detectionNumber = 0;
+             SetDetectionText();
+
+         }
+
+         if (detectionNumber == 100)
+         {
+             rb2d.Sleep();
+             //gameOverScreen.SetActive(true);
+             detectionNumber = 100;
+             SetDetectionText();
+         }
+
+        playerAnim.SetFloat("MoveX", Input.GetAxis("Horizontal"));
+        playerAnim.SetFloat("MoveY", Input.GetAxis("Vertical"));
+        playerAnim.SetBool("PlayerMoving", playerMoving);
+        playerAnim.SetFloat("LastMoveX", lastMoved.x);
+        playerAnim.SetFloat("LastMoveY", lastMoved.y);
+     }
+
+        void FixedUpdate()
         {
-            detectionNumber = 100;
-            SetDetectionText();
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
+            Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+            rb2d.velocity = movement * speed;
 
-        }
+        rb2d.position = new Vector2(Mathf.Clamp(rb2d.position.x, boundaryy.xMin, boundaryy.xMax), Mathf.Clamp(rb2d.position.y, boundaryy.yMin, boundaryy.yMax));
 
-        if (detectionNumber <= 0)
-        {
-            detectionNumber = 0;
-            SetDetectionText();
 
-        }
-
-        if (detectionNumber == 100)
-        {
-            rb2d.Sleep();
-            gameOverScreen.SetActive(true);
-            detectionNumber = 100;
-            SetDetectionText();
-        }
-    }
-
-    void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        GetComponent<Rigidbody2D>().velocity = movement * speed;
     }
 
     public void SetDetectionText()
-    {
-        detectionText.text = "Detection Rate: " + detectionNumber + "%";
-    }
+        {
+            detectionText.text = "Detection Rate: " + detectionNumber + "%";
+        }
 
-    public void SetEnergyText()
-    {
-        energyText.text = "Energy: " + energy;
-    }
+        public void SetEnergyText() => energyText.text = "Energy: " + energy;
 }
+

@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
 
     public float xOffset;
     public float yOffset;
+    private Vector2 position;
 
     // Use this for initialization
     void Start()
@@ -23,4 +24,5 @@ public class CameraController : MonoBehaviour
             transform.position = new Vector3(FindObjectOfType<PlayerController>().transform.position.x + xOffset, FindObjectOfType<PlayerController>().transform.position.y + yOffset, transform.position.z);
         }
     }
+
 }
