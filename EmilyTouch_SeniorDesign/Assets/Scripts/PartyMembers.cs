@@ -11,7 +11,9 @@ public class PartyMembers : MonoBehaviour
 
     public Text relationshipText;
 
+
     public bool isParty;
+    public bool isAcquainted;
     public bool isFriends;
     public bool isMaxed;
     
@@ -27,7 +29,7 @@ public class PartyMembers : MonoBehaviour
 
         if (relationshipLevel >= 5)
         {
-            isParty = true;
+            isAcquainted = true;
         }
 
         if (relationshipLevel >= 50)
