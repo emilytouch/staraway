@@ -6,16 +6,17 @@ using PixelCrushers;
 
 public class PartyMembers : MonoBehaviour
 {
-    public int relationshipLevel;
+    int relationshipLevel;
     int addRelationship = 5;
 
     public Text relationshipText;
 
-
-    public bool isParty;
-    public bool isAcquainted;
-    public bool isFriends;
-    public bool isMaxed;
+    public Button[] partyButtons;
+    
+    bool isParty;
+    bool isAcquainted;
+    bool isFriends;
+    bool isMaxed;
     
     // Start is called before the first frame update
     void Start()
@@ -57,5 +58,10 @@ public class PartyMembers : MonoBehaviour
     public void SetRelationshipText()
     {
         relationshipText.text = "{name} support:" + relationshipLevel;
+    }
+
+    public void CharacterDescOpen()
+    {
+
     }
 }
