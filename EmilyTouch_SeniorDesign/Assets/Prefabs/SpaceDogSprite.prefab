@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7784090371917415076}
-  - component: {fileID: 7784090371917415077}
+  - component: {fileID: 3669794131014901055}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -31,8 +31,8 @@ Transform:
   m_Father: {fileID: 7784090373084523536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &7784090371917415077
-CircleCollider2D:
+--- !u!70 &3669794131014901055
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -44,9 +44,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.1
+  m_Offset: {x: -0.0046958923, y: -0.02700293}
+  m_Size: {x: 0.32624245, y: 0.77223635}
+  m_Direction: 0
 --- !u!1 &7784090373084523533
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7784090373084523536
 Transform:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2a414b8ded5066a4895f833eeff96ad3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -470,9 +470,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3a75d8ed2b4564b981771e572cf81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relationshipLevel: 10
   relationshipText: {fileID: 0}
-  isParty: 0
-  isAcquainted: 0
-  isFriends: 0
-  isMaxed: 0
+  partyButtons: []
