@@ -12,6 +12,8 @@ public class PauseFunction : MonoBehaviour
     public GameObject pauseCanvas;
     public GameObject partyCanvas;
     public GameObject invCanvas;
+    public GameObject optCanvas;
+    public GameObject questCanvas;
 
     private int lastPressed;
     public Button resumeButton;
@@ -20,21 +22,24 @@ public class PauseFunction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pauseCanvas.SetActive(false);
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        invCanvas.GetComponent<Canvas>().enabled = false;
+        optCanvas.GetComponent<Canvas>().enabled = false;
+        partyCanvas.GetComponent<Canvas>().enabled = false;
+
         lastPressed = 0;
 
         if (isPaused == true)
         {
-            pauseCanvas.SetActive(true);
+            pauseCanvas.GetComponent<Canvas>().enabled = true;
             Time.timeScale = 0f;
         }
         else
         {
-            pauseCanvas.SetActive(false);
+            pauseCanvas.GetComponent<Canvas>().enabled = false;
             Time.timeScale = 1f;
         }
 
-        partyCanvas.SetActive(false);
         resumeButton.onClick.AddListener(Resume);
         exitButton.onClick.AddListener(QuitLevel);
     }
@@ -48,7 +53,7 @@ public class PauseFunction : MonoBehaviour
             {
                 isPaused = true;
                 lastPressed = 1;
-                pauseCanvas.SetActive(true);
+                pauseCanvas.GetComponent<Canvas>().enabled = true;
                 Time.timeScale = 0f;
                 Debug.Log("Freeze!");
             }
@@ -56,19 +61,23 @@ public class PauseFunction : MonoBehaviour
             {
                 isPaused = false;
                 lastPressed = 0;
-                pauseCanvas.SetActive(false);
+                pauseCanvas.GetComponent<Canvas>().enabled = false;
                 Time.timeScale = 1f;
                 Debug.Log("everybody clap yo hands");
             }
         }
+
     }
 
     public void Resume()
     {
         isPaused = false;
-        pauseCanvas.SetActive(false);
-        partyCanvas.SetActive(false);
-        invCanvas.SetActive(false);
+
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        invCanvas.GetComponent<Canvas>().enabled = false;
+        optCanvas.GetComponent<Canvas>().enabled = false;
+        partyCanvas.GetComponent<Canvas>().enabled = false;
+
         Time.timeScale = 1f;
         Debug.Log("woo");
         lastPressed = 0;
@@ -77,26 +86,60 @@ public class PauseFunction : MonoBehaviour
     public void PartyMenu()
     {
         isPaused = true;
-        partyCanvas.SetActive(true);
-        pauseCanvas.SetActive(false);
+
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        invCanvas.GetComponent<Canvas>().enabled = false;
+        optCanvas.GetComponent<Canvas>().enabled = false;
+        partyCanvas.GetComponent<Canvas>().enabled = true;
+
         Time.timeScale = 0f;
         lastPressed = 1;
 
-    }public void Back()
+    }
+
+    public void QuestMenu()
     {
         isPaused = true;
-        pauseCanvas.SetActive(true);
-        partyCanvas.SetActive(false);
-        invCanvas.SetActive(false);
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        invCanvas.GetComponent<Canvas>().enabled = false;
+        optCanvas.GetComponent<Canvas>().enabled = false;
+        partyCanvas.GetComponent<Canvas>().enabled = false;
+        Time.timeScale = 0f;
+        lastPressed = 1;
+
+    }
+
+    public void OptionsMenu()
+    {
+        isPaused = true;
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        invCanvas.GetComponent<Canvas>().enabled = false;
+        optCanvas.GetComponent<Canvas>().enabled = true;
+        partyCanvas.GetComponent<Canvas>().enabled = false;
+        questCanvas.SetActive(false);
+        Time.timeScale = 0f;
+        lastPressed = 1;
+
+    }
+
+    public void Back()
+    {
+        isPaused = true;
+        pauseCanvas.GetComponent<Canvas>().enabled = true;
+        invCanvas.GetComponent<Canvas>().enabled = false;
+        optCanvas.GetComponent<Canvas>().enabled = false;
+        partyCanvas.GetComponent<Canvas>().enabled = false;
+        questCanvas.SetActive(false);
         Time.timeScale = 0f;
         lastPressed = 1;
     }
 
     public void Inventory()
     {
-        invCanvas.SetActive(true);
-        pauseCanvas.SetActive(false);
-        partyCanvas.SetActive(false);
+        pauseCanvas.GetComponent<Canvas>().enabled = false;
+        invCanvas.GetComponent<Canvas>().enabled = true;
+        optCanvas.GetComponent<Canvas>().enabled = false;
+        partyCanvas.GetComponent<Canvas>().enabled = false;
         Time.timeScale = 0;
         lastPressed = 1;
     }
@@ -107,6 +150,8 @@ public class PauseFunction : MonoBehaviour
         invCanvas.SetActive(true);
         pauseCanvas.SetActive(false);
         partyCanvas.SetActive(false);
+        optCanvas.SetActive(false);
+        questCanvas.SetActive(false);
         Time.timeScale = 0;
         lastPressed = 1;
     }

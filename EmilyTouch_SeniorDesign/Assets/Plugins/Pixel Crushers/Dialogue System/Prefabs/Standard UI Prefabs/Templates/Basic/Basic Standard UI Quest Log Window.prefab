@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 22476578}
   - component: {fileID: 22255000}
   - component: {fileID: 11421820}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -11, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22255000
@@ -72,7 +72,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 22459650}
   - component: {fileID: 22290622}
   - component: {fileID: 11413106}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ RectTransform:
   m_GameObject: {fileID: 102452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.29, z: 1}
   m_Children: []
   m_Father: {fileID: 22423904}
   m_RootOrder: 0
@@ -114,7 +114,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 9, y: 9}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22290622
 CanvasRenderer:
@@ -144,8 +144,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 23dc4f9bfdcb0984995e1a58909e85d2, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 9f2cdc43fe2d20e42812c545cb67b99e, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22419024}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 11415598}
   - component: {fileID: 22251914}
   - component: {fileID: 11449092}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 11419926}
   - component: {fileID: 11468506}
   - component: {fileID: 11484122}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Heading Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 20
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUEST TITLE
+  m_Text: Quest Title
 --- !u!114 &11468506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 22431844}
   - component: {fileID: 22273242}
   - component: {fileID: 11469572}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 11442834}
   - component: {fileID: 11469808}
   - component: {fileID: 11400152}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Completed Quests Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,11 +564,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 0}
+    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
+    m_DisabledColor: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 11417498}
   - component: {fileID: 11491772}
   - component: {fileID: 11492404}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Confirm Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,8 +657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: -22}
-  m_SizeDelta: {x: 125, y: 28}
+  m_AnchoredPosition: {x: 112.42499, y: -19.5}
+  m_SizeDelta: {x: 224.84998, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22244532
 CanvasRenderer:
@@ -718,7 +718,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 0}
+    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 11
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
@@ -803,7 +803,7 @@ GameObject:
   - component: {fileID: 11459826}
   - component: {fileID: 11445082}
   - component: {fileID: 11481080}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Entry Active Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 22285646}
   - component: {fileID: 11427206}
   - component: {fileID: 11407600}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Main Content Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,8 +938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5}
-  m_SizeDelta: {x: -16, y: -70}
+  m_AnchoredPosition: {x: 0, y: 29.6}
+  m_SizeDelta: {x: -16, y: -119.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22285646
 CanvasRenderer:
@@ -1015,7 +1015,7 @@ GameObject:
   - component: {fileID: 22469798}
   - component: {fileID: 11406400}
   - component: {fileID: 11455802}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Selected Quest Details Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,12 +1060,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 24
+    m_Left: 35
     m_Right: 8
-    m_Top: 17
+    m_Top: 38
     m_Bottom: 8
   m_ChildAlignment: 0
-  m_Spacing: 10
+  m_Spacing: 12.62
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 11489698}
   - component: {fileID: 11419764}
   - component: {fileID: 11436452}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Interior Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,8 +1122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 197.5, y: 0}
-  m_SizeDelta: {x: 395, y: 0}
+  m_AnchoredPosition: {x: 425.55, y: 0}
+  m_SizeDelta: {x: 781.1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22230922
 CanvasRenderer:
@@ -1153,7 +1153,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 22455066}
   - component: {fileID: 22272478}
   - component: {fileID: 11487986}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Showing Completed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 22291704}
   - component: {fileID: 11474276}
   - component: {fileID: 11414442}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,8 +1316,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: -14}
-  m_SizeDelta: {x: 125, y: 28}
+  m_AnchoredPosition: {x: 112.42499, y: -25}
+  m_SizeDelta: {x: 224.84998, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22291704
 CanvasRenderer:
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 22236094}
   - component: {fileID: 11411222}
   - component: {fileID: 11441886}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1416,8 +1416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 55.5, y: -14}
-  m_SizeDelta: {x: 111, y: 28}
+  m_AnchoredPosition: {x: 105.42499, y: -25}
+  m_SizeDelta: {x: 210.84998, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22236094
 CanvasRenderer:
@@ -1494,7 +1494,7 @@ GameObject:
   - component: {fileID: 11488726}
   - component: {fileID: 11410206}
   - component: {fileID: 11499706}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Abandon Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,8 +1549,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 37370ca50f103424b98753375edcc3d9, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6a892084edab6174cb73862ab069cca2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1579,7 +1579,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_NormalColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1636,7 +1636,7 @@ GameObject:
   - component: {fileID: 11482852}
   - component: {fileID: 11459064}
   - component: {fileID: 11495446}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Track Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 11448924}
   - component: {fileID: 11438886}
   - component: {fileID: 11494650}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Abandon Button Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +1813,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 37370ca50f103424b98753375edcc3d9, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 11488086}
   - component: {fileID: 11412978}
   - component: {fileID: 11436604}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Abandon Quest Confirmation Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,8 +1903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -677, y: -392}
+  m_AnchoredPosition: {x: 0.000022888, y: -0.000012398}
+  m_SizeDelta: {x: -1315.3, y: -747.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22234110
 CanvasRenderer:
@@ -1927,8 +1927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1959,15 +1959,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 8
     m_Right: 8
-    m_Top: 24
-    m_Bottom: 7
+    m_Top: 37
+    m_Bottom: 8
   m_ChildAlignment: 0
   m_Spacing: 8
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
-  m_ChildScaleWidth: 1
+  m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
 --- !u!114 &11436604
 MonoBehaviour:
@@ -1988,6 +1988,7 @@ MonoBehaviour:
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 0
+  m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:
       m_Calls: []
@@ -2014,7 +2015,7 @@ GameObject:
   - component: {fileID: 22455308}
   - component: {fileID: 22201054}
   - component: {fileID: 11478334}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Selection Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2062,7 +2063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2092,7 +2093,7 @@ GameObject:
   - component: {fileID: 11486952}
   - component: {fileID: 11401308}
   - component: {fileID: 11454818}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Active Quests Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2177,11 +2178,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 0}
+    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
+    m_DisabledColor: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2244,7 +2245,7 @@ GameObject:
   - component: {fileID: 22439574}
   - component: {fileID: 22216216}
   - component: {fileID: 11405564}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2291,14 +2292,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.66479176, g: 0.48235294, b: 0.7058824, a: 0.8352941}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ff8f2c6bfc503d848820e5b3d494f4f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57b22252e8953e341a3b4b6135a85c0d, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2321,7 +2322,7 @@ GameObject:
   - component: {fileID: 11444152}
   - component: {fileID: 11454908}
   - component: {fileID: 11438342}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Completed Quest Title Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2377,7 +2378,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 20
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2388,7 +2389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: COMPLETED QUEST
+  m_Text: Completed Quest
 --- !u!114 &11454908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,7 +2437,7 @@ GameObject:
   - component: {fileID: 11468178}
   - component: {fileID: 22211306}
   - component: {fileID: 11451562}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2524,15 +2525,15 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 57b22252e8953e341a3b4b6135a85c0d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
   m_Type: 1
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 1
+  m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &142326
 GameObject:
@@ -2549,7 +2550,7 @@ GameObject:
   - component: {fileID: 11469932}
   - component: {fileID: 11441632}
   - component: {fileID: 11481438}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Completed Quest Heading Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2605,7 +2606,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d7ba33f6180e243448f102d3a55d22fb, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2693,7 +2694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 35
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
@@ -2733,7 +2734,7 @@ GameObject:
   - component: {fileID: 22447718}
   - component: {fileID: 22228592}
   - component: {fileID: 11494582}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2780,14 +2781,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.66479176, g: 0.48235294, b: 0.7058824, a: 0.8352941}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ff8f2c6bfc503d848820e5b3d494f4f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57b22252e8953e341a3b4b6135a85c0d, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2811,7 +2812,7 @@ GameObject:
   - component: {fileID: 11432834}
   - component: {fileID: 11407766}
   - component: {fileID: 11462688}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Group Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2867,7 +2868,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d7ba33f6180e243448f102d3a55d22fb, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2910,7 +2911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 35
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
@@ -2952,7 +2953,7 @@ GameObject:
   - component: {fileID: 11475640}
   - component: {fileID: 11428720}
   - component: {fileID: 11473988}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Entry Success Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2999,7 +3000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.89819354, g: 0.6, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3008,7 +3009,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3063,7 +3064,7 @@ GameObject:
   - component: {fileID: 11485500}
   - component: {fileID: 11479106}
   - component: {fileID: 11494868}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Abandon Quest Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3086,8 +3087,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 123.5, y: -62.5}
-  m_SizeDelta: {x: 231, y: 21}
+  m_AnchoredPosition: {x: 225.84998, y: -130.75}
+  m_SizeDelta: {x: 435.69995, y: 131.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22229710
 CanvasRenderer:
@@ -3110,7 +3111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8503343, b: 0.5990566, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3118,7 +3119,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
+    m_Font: {fileID: 12800000, guid: 038a74619252e3244a242e9bf976721c, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3180,7 +3181,7 @@ GameObject:
   - component: {fileID: 22529778}
   - component: {fileID: 9527512}
   - component: {fileID: 11452756}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3298,6 +3299,7 @@ MonoBehaviour:
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 2
+  m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:
       m_Calls: []
@@ -3326,7 +3328,7 @@ GameObject:
   - component: {fileID: 11455502}
   - component: {fileID: 11415722}
   - component: {fileID: 11421068}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Description Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3382,7 +3384,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 16
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3437,7 +3439,7 @@ GameObject:
   - component: {fileID: 11403458}
   - component: {fileID: 11465210}
   - component: {fileID: 11495842}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Active Quest Title Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3493,7 +3495,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 20
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3504,7 +3506,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ACTIVE QUEST
+  m_Text: Active Quest
 --- !u!114 &11465210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3552,7 +3554,7 @@ GameObject:
   - component: {fileID: 11432672}
   - component: {fileID: 22237692}
   - component: {fileID: 11416972}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3642,7 +3644,7 @@ GameObject:
   - component: {fileID: 22232120}
   - component: {fileID: 11446052}
   - component: {fileID: 11477214}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3658,7 +3660,7 @@ RectTransform:
   m_GameObject: {fileID: 162308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.94, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22419024}
   m_Father: {fileID: 22420436}
@@ -3666,7 +3668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -11}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &22232120
@@ -3690,14 +3692,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15880173, g: 0.14328942, b: 0.26415092, a: 0.8352941}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8bd8fed5f979807439a894d9ec3bfa6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3769,8 +3771,7 @@ GameObject:
   - component: {fileID: 22221378}
   - component: {fileID: 11452156}
   - component: {fileID: 11400838}
-  - component: {fileID: 234620306}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Basic Standard UI Quest Log Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3786,7 +3787,7 @@ RectTransform:
   m_GameObject: {fileID: 162630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99539, y: 0.99539, z: 0.99539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22450706}
   m_Father: {fileID: 0}
@@ -3794,8 +3795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.21795654, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -80, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22221378
 CanvasRenderer:
@@ -3850,7 +3851,7 @@ MonoBehaviour:
   textTable: {fileID: 0}
   noActiveQuestsText: No Active Quests
   noCompletedQuestsText: No Completed Quests
-  checkVisibleField: 1
+  checkVisibleField: 0
   questHeadingSource: 0
   abandonQuestState: 1
   pauseWhileOpen: 1
@@ -3873,7 +3874,8 @@ MonoBehaviour:
   completedQuestHeadingTemplate: {fileID: 11481438}
   selectedCompletedQuestHeadingTemplate: {fileID: 0}
   showNoQuestsText: 1
-  showDetailsOnSelect: 1
+  selectFirstQuestOnOpen: 0
+  showDetailsOnSelect: 0
   keepGroupsExpanded: 0
   questDetailsContentContainer: {fileID: 22469798}
   questHeadingTextTemplate: {fileID: 11484122}
@@ -3888,18 +3890,7 @@ MonoBehaviour:
     m_textMeshProUGUI: {fileID: 0}
   onOpen:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onClose:
@@ -3910,21 +3901,6 @@ MonoBehaviour:
   addEventSystemIfNeeded: 1
   foldoutToSelect: 
   questTitleToSelect: 
---- !u!114 &234620306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6cf523ba89902b4096edc7b521eebfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 106
-  buttonName: 
-  questLogWindow: {fileID: 11400838}
 --- !u!1 &165220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,7 +3912,7 @@ GameObject:
   - component: {fileID: 22423904}
   - component: {fileID: 22216158}
   - component: {fileID: 11469012}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3952,7 +3928,7 @@ RectTransform:
   m_GameObject: {fileID: 165220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 22459650}
   m_Father: {fileID: 22492402}
@@ -3984,16 +3960,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.15880173, g: 0.14328942, b: 0.26415092, a: 0.8352941}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 1
+  m_Sprite: {fileID: 21300000, guid: 9f2cdc43fe2d20e42812c545cb67b99e, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4012,7 +3988,7 @@ GameObject:
   - component: {fileID: 22451830}
   - component: {fileID: 11444728}
   - component: {fileID: 11478940}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Titles Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4038,8 +4014,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0000072768985, y: -0.000029074154}
+  m_SizeDelta: {x: -26.4, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &11444728
 MonoBehaviour:
@@ -4054,12 +4030,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 34
+    m_Left: 8
     m_Right: 8
-    m_Top: 15
+    m_Top: 26
     m_Bottom: 8
-  m_ChildAlignment: 0
-  m_Spacing: 27.5
+  m_ChildAlignment: 1
+  m_Spacing: 33.34
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -4092,7 +4068,7 @@ GameObject:
   - component: {fileID: 11403056}
   - component: {fileID: 11418844}
   - component: {fileID: 11423302}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Track Toggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4213,7 +4189,7 @@ GameObject:
   - component: {fileID: 22255444}
   - component: {fileID: 11406956}
   - component: {fileID: 11488222}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Group Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4236,8 +4212,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -10.5}
+  m_SizeDelta: {x: 0, y: 21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22255444
 CanvasRenderer:
@@ -4260,7 +4236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8503343, b: 0.5990566, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4269,7 +4245,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 20
+    m_FontSize: 27
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -4280,7 +4256,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUEST GROUP
+  m_Text: Quest Group
 --- !u!114 &11488222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4306,7 +4282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22464092}
   - component: {fileID: 11427450}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Flexible Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4364,7 +4340,7 @@ GameObject:
   - component: {fileID: 22258646}
   - component: {fileID: 11433896}
   - component: {fileID: 11459138}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Button Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4389,8 +4365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 123.5, y: -101}
-  m_SizeDelta: {x: 231, y: 40}
+  m_AnchoredPosition: {x: 225.84998, y: -224}
+  m_SizeDelta: {x: 435.69995, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22258646
 CanvasRenderer:
@@ -4420,7 +4396,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4445,10 +4421,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 8
+    m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: -5
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -4466,7 +4442,7 @@ GameObject:
   - component: {fileID: 22460958}
   - component: {fileID: 22283772}
   - component: {fileID: 11408754}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4489,7 +4465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -11, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22283772
@@ -4527,7 +4503,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4543,7 +4519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22430292}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4583,7 +4559,7 @@ GameObject:
   - component: {fileID: 11420970}
   - component: {fileID: 11455794}
   - component: {fileID: 11493954}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Entry Failure Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4630,7 +4606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4639,7 +4615,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4693,7 +4669,7 @@ GameObject:
   - component: {fileID: 22218714}
   - component: {fileID: 11427372}
   - component: {fileID: 11409764}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Window Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4716,7 +4692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -8}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &22218714
@@ -4760,7 +4736,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUESTS
+  m_Text: Quest Journal
 --- !u!114 &11409764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4787,7 +4763,7 @@ GameObject:
   - component: {fileID: 22466470}
   - component: {fileID: 22290732}
   - component: {fileID: 11462008}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Details Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +4818,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4f82e85a6dad7a4419b8c2a63f81739d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4864,7 +4840,7 @@ GameObject:
   - component: {fileID: 22234602}
   - component: {fileID: 11410068}
   - component: {fileID: 11462546}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4880,7 +4856,7 @@ RectTransform:
   m_GameObject: {fileID: 192054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.94, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22430292}
   m_Father: {fileID: 22414768}
@@ -4888,7 +4864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.8, y: -10.7}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &22234602
@@ -4912,14 +4888,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15880173, g: 0.14328942, b: 0.26415092, a: 0.8352941}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8bd8fed5f979807439a894d9ec3bfa6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d3b4b1d32565c944b0452176b513899, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4991,7 +4967,7 @@ GameObject:
   - component: {fileID: 22221542}
   - component: {fileID: 11414100}
   - component: {fileID: 11469552}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Panel Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5014,8 +4990,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 123.5, y: -34}
-  m_SizeDelta: {x: 231, y: 20}
+  m_AnchoredPosition: {x: 225.84998, y: -47}
+  m_SizeDelta: {x: 435.69995, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22221542
 CanvasRenderer:
@@ -5046,13 +5022,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 7a17397e79f3acf4a92bb838c0341340, type: 3}
+    m_Font: {fileID: 12800000, guid: 038a74619252e3244a242e9bf976721c, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 7
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5085,7 +5061,7 @@ GameObject:
   - component: {fileID: 22474374}
   - component: {fileID: 22233130}
   - component: {fileID: 11467252}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5146,7 +5122,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 5
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5165,7 +5141,7 @@ GameObject:
   - component: {fileID: 22221994}
   - component: {fileID: 11438330}
   - component: {fileID: 11453284}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Bottom Button Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5195,7 +5171,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 40}
+  m_SizeDelta: {x: 0, y: 89.2}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &22221994
 CanvasRenderer:
@@ -5225,7 +5201,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3d3b4b1d32565c944b0452176b513899, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5248,12 +5224,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 31
-    m_Right: 8
+    m_Left: 35
+    m_Right: 37
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 5
-  m_Spacing: 4
+  m_Spacing: 14
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -5272,7 +5248,7 @@ GameObject:
   - component: {fileID: 11469894}
   - component: {fileID: 22290434}
   - component: {fileID: 11498076}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5360,7 +5336,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4f82e85a6dad7a4419b8c2a63f81739d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5381,7 +5357,7 @@ GameObject:
   - component: {fileID: 22469954}
   - component: {fileID: 22284462}
   - component: {fileID: 11413288}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Showing Active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5463,7 +5439,7 @@ GameObject:
   - component: {fileID: 11482686}
   - component: {fileID: 11444116}
   - component: {fileID: 11438050}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5548,11 +5524,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 0}
+    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5598,6 +5574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 27
   buttonName: 
+  anyKeyOrButton: 0
+  skipIfBeingClickedBySubmit: 1
+  simulateButtonClick: 1
+  simulateButtonDownDuration: 0.1
 --- !u!114 &11438050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5631,7 +5611,7 @@ GameObject:
   - component: {fileID: 11454642}
   - component: {fileID: 11475138}
   - component: {fileID: 11408158}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Cancel Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5655,8 +5635,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175.5, y: -22}
-  m_SizeDelta: {x: 111, y: 28}
+  m_AnchoredPosition: {x: 330.27496, y: -19.5}
+  m_SizeDelta: {x: 210.84998, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22205638
 CanvasRenderer:
@@ -5716,7 +5696,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 0}
+    m_NormalColor: {r: 0.627451, g: 0.627451, b: 0.627451, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5767,7 +5747,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 11
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
@@ -5792,7 +5772,7 @@ GameObject:
   - component: {fileID: 11432858}
   - component: {fileID: 11487614}
   - component: {fileID: 11491532}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Active Quest Heading Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5848,7 +5828,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d7ba33f6180e243448f102d3a55d22fb, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5936,8 +5916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 9
+    m_Left: 35
+    m_Right: 0
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -5978,7 +5958,7 @@ GameObject:
   - component: {fileID: 11496716}
   - component: {fileID: 11414438}
   - component: {fileID: 11444678}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Quest Group Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6033,7 +6013,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: eae9010da23b6034e9f7b9d1fa5beae8, type: 3}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6071,9 +6051,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 4f82e85a6dad7a4419b8c2a63f81739d,
-      type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 57b22252e8953e341a3b4b6135a85c0d, type: 3}
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -6083,7 +6062,7 @@ MonoBehaviour:
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 11496716}
+  m_TargetGraphic: {fileID: 11406956}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -6120,7 +6099,7 @@ GameObject:
   - component: {fileID: 22407206}
   - component: {fileID: 22225148}
   - component: {fileID: 11430496}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6143,7 +6122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -4, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &22225148
@@ -6181,13 +6160,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Complete
+  m_Text: Completed
 --- !u!1 &199998
 GameObject:
   m_ObjectHideFlags: 0
@@ -6199,7 +6178,7 @@ GameObject:
   - component: {fileID: 22401766}
   - component: {fileID: 22224580}
   - component: {fileID: 11470506}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

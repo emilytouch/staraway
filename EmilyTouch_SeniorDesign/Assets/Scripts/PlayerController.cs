@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
+//[System.Serializable]
 
-public class Boundary
+/*public class Boundary
 {
     public float xMin, xMax, yMin, yMax;
-}
+}*/
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,10 +20,9 @@ public class PlayerController : MonoBehaviour
 
     private static bool playerExists;
     public Text detectionText;
-    public Text energyText;
-    public GameObject gameOverScreen;
 
-    public Boundary boundaryy;
+
+    //public Boundary boundaryy;
 
     private Animator playerAnim;
     private bool playerMoving;
@@ -45,9 +44,6 @@ public class PlayerController : MonoBehaviour
         playerAnim = GetComponent<Animator>();
 
         detectionNumber = 0;
-        SetDetectionText();
-        SetEnergyText();
-        gameOverScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -63,18 +59,6 @@ public class PlayerController : MonoBehaviour
         {
             speed = 1;
         }
-
-        if (speed >= 3)
-         {
-             detectionNumber += 1;
-             SetDetectionText();
-         }
-         if (speed == 1)
-         {
-             detectionNumber -= 1;
-             SetDetectionText();
-
-         }
 
          if(Input.GetAxisRaw("Horizontal")>0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
@@ -94,14 +78,13 @@ public class PlayerController : MonoBehaviour
         if (detectionNumber >= 100)
          {
              detectionNumber = 100;
-             SetDetectionText();
 
          }
 
          if (detectionNumber <= 0)
          {
              detectionNumber = 0;
-             SetDetectionText();
+
 
          }
 
@@ -110,7 +93,7 @@ public class PlayerController : MonoBehaviour
              rb2d.Sleep();
              //gameOverScreen.SetActive(true);
              detectionNumber = 100;
-             SetDetectionText();
+
          }
 
         playerAnim.SetFloat("MoveX", Input.GetAxis("Horizontal"));
@@ -119,24 +102,16 @@ public class PlayerController : MonoBehaviour
         playerAnim.SetFloat("LastMoveX", lastMoved.x);
         playerAnim.SetFloat("LastMoveY", lastMoved.y);
      }
-
         void FixedUpdate()
         {
             float moveHorizontal = Input.GetAxis("Horizontal");
             float moveVertical = Input.GetAxis("Vertical");
             Vector2 movement = new Vector2(moveHorizontal, moveVertical);
             rb2d.velocity = movement * speed;
-
-        rb2d.position = new Vector2(Mathf.Clamp(rb2d.position.x, boundaryy.xMin, boundaryy.xMax), Mathf.Clamp(rb2d.position.y, boundaryy.yMin, boundaryy.yMax));
-
-
-    }
-
-    public void SetDetectionText()
-        {
-            detectionText.text = "Detection Rate: " + detectionNumber + "%";
         }
-
-        public void SetEnergyText() => energyText.text = "Energy: " + energy;
+    void OnComplete()
+    {
+        energy -= 1;
+    }
 }
 

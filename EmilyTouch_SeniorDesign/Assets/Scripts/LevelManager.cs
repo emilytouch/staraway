@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using PixelCrushers;
 
 public class LevelManager : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().energy = 5;
         playerInExit = false;
         SetLevelText();
         
@@ -33,10 +34,19 @@ public class LevelManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && (PixelCrushers.DialogueSystem.QuestLog.IsQuestSuccessful("Under Fire") &&
+            PixelCrushers.DialogueSystem.QuestLog.IsQuestSuccessful("Pizza Delivery") &&
+            PixelCrushers.DialogueSystem.QuestLog.IsQuestSuccessful("I Need Healing!") &&
+            PixelCrushers.DialogueSystem.QuestLog.IsQuestSuccessful("See you, Space Emperor") &&
+            PixelCrushers.DialogueSystem.QuestLog.IsQuestSuccessful("Gathering the Magic")))
         {
             Debug.Log("oh????");
             playerInExit = true;
+        }
+        else
+        {
+            playerInExit = false;
+            PixelCrushers.DialogueSystem.DialogueManager.ShowAlert("You must finish ALL the quests before you can continue!");
         }
     }
 
@@ -52,10 +62,5 @@ public class LevelManager : MonoBehaviour
     public void SetLevelText()
     {
         levelText.text = "Area: " + currentLevel;
-    }
-
-    public void RetryLevel()
-    {
-        SceneManager.LoadScene("ShipLevel");
     }
 }

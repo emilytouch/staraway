@@ -1,4 +1,3 @@
-// Recompile at 9/29/2019 10:28:02 PM
 #if USE_TIMELINE
 #if UNITY_2017_1_OR_NEWER
 // Copyright (c) Pixel Crushers. All rights reserved.
@@ -26,6 +25,12 @@ namespace PixelCrushers.DialogueSystem
 
         [Tooltip("Dialogue entry to jump to.")]
         public int entryID;
+
+        public string GetEditorDialogueText()
+        {
+            var dialogueText = PreviewUI.GetDialogueText(conversation, jumpToSpecificEntry ? entryID : -1);
+            return "[" + conversation + "] '" + dialogueText + "'";
+        }
 
     }
 }

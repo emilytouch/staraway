@@ -10,7 +10,6 @@ public class MainMenuScript : MonoBehaviour
     public string mainMenu;
 
     public GameObject ngButton;
-    public GameObject lgButton;
     public GameObject optionButton;
     public GameObject exitButton;
     public GameObject backButton;

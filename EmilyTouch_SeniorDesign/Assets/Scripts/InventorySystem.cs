@@ -21,11 +21,10 @@ public class InventorySystem : MonoBehaviour
         if (!invExists)
         {
             invExists = true;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject);
+
         }
     }
 

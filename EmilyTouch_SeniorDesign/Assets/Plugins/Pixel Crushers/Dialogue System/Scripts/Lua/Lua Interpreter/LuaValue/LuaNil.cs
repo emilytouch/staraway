@@ -28,7 +28,7 @@ namespace Language.Lua
 
         public override string ToString()
         {
-            return "nil";
+            return "?";
         }
     }
 }
